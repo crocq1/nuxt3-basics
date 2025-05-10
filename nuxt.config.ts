@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { i18n } from './config'
+
 export default defineNuxtConfig({
+  srcDir: 'src/',
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
 
@@ -19,9 +22,12 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      FRONTEND_URL: process.env.FRONTEND_URL || "http://localhost:3000",
+      FRONTEND_URL: process.env.FRONTEND_URL,
     },
   },
 
-  modules: ['@nuxt/image'],
-});
+  modules: [
+    ['@nuxtjs/i18n', i18n],
+    '@nuxt/image',
+  ],
+})

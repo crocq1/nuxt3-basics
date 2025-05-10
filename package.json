@@ -12,8 +12,9 @@
     "cleanup": "nuxt cleanup"
   },
   "dependencies": {
-    "@nuxt/image": "^1.7.1",
-    "nuxt": "^3.13.0",
+    "@nuxt/image": "^1.10.0",
+    "@nuxtjs/i18n": "^9.5.4",
+    "nuxt": "^3.17.2",
     "vue": "latest"
   },
   "devDependencies": {
